@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/slide.css">
+    <script type="text/javascript">
+        window.onload = function () {
+            // 数据
+            var data = [{
+                href: 'javascript:;',
+                src: 'img/pic1.png',
+                alt: '这里是图片的alt内容1',
+                text: '一款简单、好用的移动端自适应轮播图'
+            },{
+                href: 'javascript:;',
+                src: 'img/pic2.png',
+                alt: '这里是图片的alt内容2',
+                text: '支持静态网页和动态渲染两种初始模式'
+            },{
+                href: 'javascript:;',
+                src: 'img/pic3.png',
+                alt: '这里是图片的alt内容3',
+                text: '在横竖屏切换时依然可完美的适应屏幕'
+            },{
+                href: 'javascript:;',
+                src: 'img/pic4.png',
+                alt: '这里是图片的alt内容4',
+                text: '提供了三套指示器样式，你也可以自定义'
+            },{
+                href: 'javascript:;',
+                src: 'img/pic5.png',
+                alt: '这里是图片的alt内容4',
+                text: '还可以更改轮播时间、滑动速度和自动播放'
+            },{
+                href: 'javascript:;',
+                src: 'img/webxzy-shadow.png',
+                alt: 'webxzy@qq.com'
+            }];
+
+            // new
+            var slide = new Slide({
+                id: 'slide',
+                data: data,
+                auto: true
+            });
+
+            // 调用
+            slide.render();
+        }
+    </script>
+</head>
+<body>
+	<div id="slide">
+        <!-- <div class="slide-content">
+            <a href="http://www.baidu.com">
+                <img src="img/pic1.png" alt="">
+                <p>这是一些图片的说明文字，当前是第1张</p>
+            </a>
+            <a href="javascript:;">
+                <img src="img/pic2.png" alt="">
+                <p>这是一些图片的说明文字，当前是第2张</p>
+            </a>
+            <a href="javascript:;">
+                <img src="img/pic3.png" alt="">
+                <p>这是一些图片的说明文字，当前是第3张</p>
+            </a>
+            <a href="javascript:;">
+                <img src="img/pic4.png" alt="">
+                <p>这是一些图片的说明文字，当前是第4张</p>
+            </a>
+            <a href="javascript:;">
+                <img src="img/pic5.png" alt="">
+                <p>这是一段很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长图片的说明文字，当前是第5张</p>
+            </a>
+            <a href="javascript:;">
+                <img src="img/webxzy-shadow.png" alt="webxzy@qq.com">
+                <p>这是一些图片的说明文字，当前是第6张</p>
+            </a>
+        </div> -->
+    </div>
+    <script type="text/javascript" src="js/slide.js"></script>
+</body>
+</html>
