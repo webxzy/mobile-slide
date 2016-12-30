@@ -1,8 +1,8 @@
 # mSlide 移动端轮播图
-可以支持json数据和静态html两种调用模式。
+没有什么依赖文件，使用原生js封装的，可以支持动态和静态两种调用模式。
 
 ## Usage
-1. 在html页面引入js和css文件
+1.在html页面引入js和css文件
 ```
 // css
 <link rel="stylesheet" type="text/css" href="css/slide.css">
@@ -11,12 +11,12 @@
 <script type="text/javascript" src="js/slide.js"></script>
 ```
 
-2. 创建一个根元素
+2.创建一个根元素
 ```
 <div id="slide"></div>
 ```
 
-3. json格式的数据
+3.json格式的数据
 ```
 var data = [{
     href: 'javascript:;',
@@ -50,7 +50,7 @@ var data = [{
 }];
 ```
 
-4. 调用
+4.调用
 ```
 var slide = new Slide({
     id: 'slide',
@@ -83,7 +83,7 @@ var slide = new Slide({
         </a>
         <a href="javascript:;">
             <img src="img/pic5.png" alt="">
-            <span>这是一段很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长图片的说明文字，当前是第5张</span>
+            <span>这是一段很长很长很长很长很长很长很长很长很长很长的说明文字，当前是第5张</span>
         </a>
         <a href="javascript:;">
             <img src="img/webxzy-shadow.png" alt="webxzy@qq.com">
@@ -103,7 +103,7 @@ var slide = new Slide({
 
 
 ## API
--indicator 指示器样式
+- indicator 指示器样式
     - oblong 长方形 默认
     - dot 圆
     - digital 带数字的圆
