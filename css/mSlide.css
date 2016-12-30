@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+
+.slide-content {
+    position: relative;
+    -webkit-transition-property: transform;
+}
+
+.slide-content a {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.slide-content span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 3px;
+    width: 70%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.slide-content img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.slide-indicator {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    color: white;
+    font-size: 12px;
+    text-align: right;
+}
+
+.dot-indicator li,
+.digital-indicator li {
+    /*带数字的圆形指示器*/
+    display: inline-block;
+    margin: 0 1px;
+    width: 0.75rem;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+/*不带数字的圆形指示器*/
+.dot-indicator li {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+/*长方体指示器*/
+.oblong-indicator li {
+    display: inline-block;
+    margin: 0 1px;
+    width: 0.9rem;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.digital-indicator .active {
+    background-color: #555;
+}
+
+.dot-indicator .active {
+    background-color: rgba(255, 172, 41, 0.9);
+}
+
+.oblong-indicator .active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
