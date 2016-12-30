@@ -13,7 +13,8 @@ body {
     width: 100%;
 }
 
-.slide-content p {
+.slide-content span {
+    display: block;
     position: absolute;
     bottom: 0;
     margin: 0;

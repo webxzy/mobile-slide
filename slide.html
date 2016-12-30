@@ -22,12 +22,12 @@
                 href: 'javascript:;',
                 src: 'img/pic3.png',
                 alt: '这里是图片的alt内容3',
-                text: '在横竖屏切换时依然可完美的适应屏幕'
+                text: '在横竖屏切换时可自动适应屏幕'
             },{
                 href: 'javascript:;',
                 src: 'img/pic4.png',
                 alt: '这里是图片的alt内容4',
-                text: '提供了三套指示器样式，你也可以自定义'
+                text: '提供了三套指示器样式，也可以自定义'
             },{
                 href: 'javascript:;',
                 src: 'img/pic5.png',
@@ -40,14 +40,11 @@
             }];
 
             // new
-            var slide = new Slide({
+            var slide = new mSlide({
                 id: 'slide',
                 data: data,
                 auto: true
             });
-
-            // 调用
-            slide.render();
         }
     </script>
 </head>
@@ -56,27 +53,27 @@
         <!-- <div class="slide-content">
             <a href="http://www.baidu.com">
                 <img src="img/pic1.png" alt="">
-                <p>这是一些图片的说明文字，当前是第1张</p>
+                <span>这是一些图片的说明文字，当前是第1张</span>
             </a>
             <a href="javascript:;">
                 <img src="img/pic2.png" alt="">
-                <p>这是一些图片的说明文字，当前是第2张</p>
+                <span>这是一些图片的说明文字，当前是第2张</span>
             </a>
             <a href="javascript:;">
                 <img src="img/pic3.png" alt="">
-                <p>这是一些图片的说明文字，当前是第3张</p>
+                <span>这是一些图片的说明文字，当前是第3张</span>
             </a>
             <a href="javascript:;">
                 <img src="img/pic4.png" alt="">
-                <p>这是一些图片的说明文字，当前是第4张</p>
+                <span>这是一些图片的说明文字，当前是第4张</span>
             </a>
             <a href="javascript:;">
                 <img src="img/pic5.png" alt="">
-                <p>这是一段很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长图片的说明文字，当前是第5张</p>
+                <span>这是一段很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长图片的说明文字，当前是第5张</span>
             </a>
             <a href="javascript:;">
                 <img src="img/webxzy-shadow.png" alt="webxzy@qq.com">
-                <p>这是一些图片的说明文字，当前是第6张</p>
+                <span>这是一些图片的说明文字，当前是第6张</span>
             </a>
         </div> -->
     </div>
