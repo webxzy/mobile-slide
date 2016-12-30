@@ -5,10 +5,10 @@
 1.在html页面引入js和css文件
 ```
 // css
-<link rel="stylesheet" type="text/css" href="css/slide.css">
+<link rel="stylesheet" type="text/css" href="css/mSlide.css">
 
 // javascript
-<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/mSlide.js"></script>
 ```
 
 2.创建一个根元素
@@ -52,7 +52,7 @@ var data = [{
 
 4.调用
 ```
-var slide = new Slide({
+var slide = new mSlide({
     id: 'slide',
     indicator: 'oblong',
     data: data,
